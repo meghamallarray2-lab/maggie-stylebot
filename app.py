@@ -87,6 +87,7 @@ def fashion_bot(user):
 
     elif user == "bye":
         st.write("MAGGIE: Thank you for chatting with me! Stay stylish ✨")
+        st.write("Type 'hi' to start a new chat.)
 
     else:
         st.write("MAGGIE: Sorry, I didn't understand that.")
