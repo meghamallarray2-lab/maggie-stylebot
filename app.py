@@ -1,16 +1,14 @@
+import streamlit as st
+
 # Fashion Stylist Chatbot using basic Python
 
-import streamlit as st   # MUST be first line
-
-
 def start_chat():
-    st.write("Hi I am Maggie!")
+    st.write("Hi! I am Maggie!")
     st.write("Your Personal Fashion Stylist Chat Assistant for today!")
     st.write("--------------------------------------------")
     st.write("👉 To start a new chat, type: hi")
     st.write("👉 To end the chat, type: bye")
     st.write("--------------------------------------------")
-
 
 def fashion_bot(user):
     if user == "hi":
@@ -87,7 +85,6 @@ def fashion_bot(user):
 
     elif user == "bye":
         st.write("MAGGIE: Thank you for chatting with me! Stay stylish ✨")
-        st.write("Type 'hi' to start a new chat.)
 
     else:
         st.write("MAGGIE: Sorry, I didn't understand that.")
@@ -101,4 +98,3 @@ user_input = st.text_input("You:")
 
 if user_input:
     fashion_bot(user_input.lower())
-
